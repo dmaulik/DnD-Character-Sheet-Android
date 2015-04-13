@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutAddEditExtra"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/textExtraName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp"
+                android:text="@string/labelName"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" >
+
+                <requestFocus />
+            </TextView>
+            
+    	<EditText
+    	    android:id="@+id/editExtraName"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:ems="10"
+    	    android:paddingBottom="8dp"
+    	    android:paddingRight="4dp"
+    	    android:paddingTop="4dp"
+    	    android:textSize="16sp"
+    	    android:typeface="serif" >
+
+    	</EditText>
+    	
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textExtraType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="8dp"
+            android:text="@string/labelType"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <RadioGroup
+            android:id="@+id/radiogroupExtraType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+        <RadioButton
+            android:id="@+id/radiobuttonExtraNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="8dp"
+            android:text="@string/labelNumber"
+            android:textSize="16sp"
+            android:typeface="serif" />
+
+        <RadioButton
+            android:id="@+id/radiobuttonExtraString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="@string/labelString"
+            android:textSize="16sp"
+            android:typeface="serif" />
+        
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textExtraDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingLeft="4dp"
+        android:text="@string/labelDesc"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+    
+    <EditText
+        android:id="@+id/editExtraDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:paddingBottom="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:textSize="16sp"
+        android:typeface="serif" >
+
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

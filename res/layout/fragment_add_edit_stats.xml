@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutFragmentAddEditStats"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp" >
+
+        <ImageView
+            android:id="@+id/imageCharacter"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:scaleType="centerInside"
+            android:gravity="left"
+            android:src="@drawable/ic_launcher" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="214dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="4dp" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp" >
+
+                <EditText
+                    android:id="@+id/editCharName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/labelName"
+                    android:textSize="16sp"
+                    android:typeface="serif" >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textComma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/labelComma"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:id="@+id/editAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/labelAge"
+                    android:inputType="number"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp" >
+
+                <EditText
+                    android:id="@+id/editSpecies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/labelSpecies"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp" >
+
+                <EditText
+                    android:id="@+id/editClass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/labelClass"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp" >
+
+                <EditText
+                    android:id="@+id/editLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/labelLevel"
+                    android:inputType="number"
+                    android:textSize="16sp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08"
+        android:padding="8dp" >
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp" >
+
+            <TextView
+                android:id="@+id/textHP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/labelHP"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editCurHP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/textHPSlash"
+                android:layout_height="wrap_content"
+                android:text="@string/labelSlash"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editMaxHP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:typeface="serif" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textInit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/labelInit"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editInit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:typeface="serif" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp" >
+
+            <TextView
+                android:id="@+id/textExp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelExp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editCurExp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/textExpSlash"
+                android:layout_width="3sp"
+                android:layout_height="wrap_content"
+                android:text="@string/labelSlash"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editNxtLvlExp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:typeface="serif" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelAC"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editAC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textSize="16sp" 
+                android:typeface="serif" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp" >
+
+            <TextView
+                android:id="@+id/textSTR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelSTR"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editSTR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textSize="16sp" 
+                android:typeface="serif" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textFORT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelFORT"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editFORT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textSize="16sp" 
+                android:typeface="serif" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp" >
+
+            <TextView
+                android:id="@+id/textCON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelCON"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editCON"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textSize="16sp" 
+                android:typeface="serif" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textREF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelREF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editREF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textSize="16sp" 
+                android:typeface="serif" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp" >
+
+            <TextView
+                android:id="@+id/textDEX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelDEX"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editDEX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textSize="16sp" 
+                android:typeface="serif" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textWILL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelWILL"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editWILL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textSize="16sp" 
+                android:typeface="serif" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp" >
+
+            <TextView
+                android:id="@+id/textWIS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelWIS"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editWIS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textSize="16sp" 
+                android:typeface="serif" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp" >
+
+            <TextView
+                android:id="@+id/textINT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelINT"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editINT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textSize="16sp" 
+                android:typeface="serif" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelSpeed"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textSize="16sp" 
+                android:typeface="serif" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp" >
+
+            <TextView
+                android:id="@+id/textCHR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelCHR"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editCHR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="number"
+                android:textSize="16sp" 
+                android:typeface="serif" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textAlign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelAlign"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editAlign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:textSize="16sp"
+                android:typeface="serif" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp" >
+
+            <TextView
+                android:id="@+id/textBAB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelBAB"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editBAB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:typeface="serif" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textCMB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/labelCMB"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editCMB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:typeface="serif" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textCMD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/labelCMD"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/editCMD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:typeface="serif" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

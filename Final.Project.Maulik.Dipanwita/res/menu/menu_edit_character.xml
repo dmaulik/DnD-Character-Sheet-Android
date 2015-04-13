@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+		android:id="@+id/menu_back"
+		android:icon="@drawable/ic_action_back"
+		android:showAsAction="ifRoom|withText" 
+		android:title=""/>
+    
+    <item
+		android:id="@+id/menu_next"
+		android:icon="@drawable/ic_action_forward"
+		android:showAsAction="ifRoom|withText" 
+		android:title=""/>
+    
+     <item
+		android:id="@+id/menu_save_char"
+		android:icon="@android:drawable/ic_menu_save"
+		android:showAsAction="ifRoom|withText" 
+		android:title=""/>
+    
+</menu>

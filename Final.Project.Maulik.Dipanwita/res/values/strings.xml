@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">D&amp;D Character Sheets</string>
+    <string name="title_activity_extra">Extras</string>
+    <string name="title_activity_add_edit_character">Add or Edit Character</string>
+    <string name="title_activity_add_edit_extra">Add or Edit Extra</string>
+    <string name="labelType">Type</string>
+    <string name="labelName">Name</string>
+    <string name="labelDesc">Description</string>
+    <string name="labelNumber">Integer</string>
+    <string name="labelString">String</string>
+    <string name="labelHP">HP</string>
+    <string name="labelInit">Init</string>
+    <string name="labelExp">Exp</string>
+    <string name="labelAC">AC</string>
+    <string name="labelSTR">STR</string>
+    <string name="labelCON">CON</string>
+    <string name="labelWIS">WIS</string>
+    <string name="labelDEX">DEX</string>
+    <string name="labelINT">INT</string>
+    <string name="labelCHR">CHR</string>
+    <string name="labelFORT">FORT</string>
+    <string name="labelREF">REF</string>
+    <string name="labelWILL">WILL</string>
+    <string name="labelSpeed">Speed</string>
+    <string name="labelAlign">Align</string>
+    <string name="labelBAB">BAB</string>
+    <string name="labelCMD">CMD</string>
+    <string name="labelCMB">CMB</string>
+    <string name="labelFeats">Feats</string>
+    <string name="labelSkills">Skills</string>
+    <string name="labelLanguages">Languages</string>
+    <string name="labelMagic">Magic</string>
+    <string name="labelArmor">Armor</string>
+    <string name="labelWeapons">Weapons</string>
+    <string name="labelMisc">Misc</string>
+    <string name="labelExtras">Extras</string>
+    <string name="labelLevel">Level</string>
+    <string name="labelClass">Class</string>
+    <string name="labelSpecies">Species</string>
+    <string name="labelAge">Age</string>
+    <string name="labelAdd">+</string>
+    <string name="labelComma">,</string>
+    <string name="labelSlash">/</string>
+    <string name="labelCancel">Cancel</string>
+    <string name="labelValue">Value</string>
+    <string name="title_fragment_character">Characters</string>
+    <string name="title_fragment_extras">Extras</string>
+    <string name="labelGo">Go</string>
+
+</resources>

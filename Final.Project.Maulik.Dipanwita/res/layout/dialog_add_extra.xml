@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutAddDialog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/spinnerChooseExtra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingLeft="4dp"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:id="@+id/textAddExtraDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/textAddExtraVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingLeft="4dp"
+        android:text="@string/labelValue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+    
+    <EditText
+        android:id="@+id/editAddExtraVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingBottom="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:textSize="16sp"
+        android:typeface="serif" >
+
+            <requestFocus />
+        </EditText>
+
+</LinearLayout>
